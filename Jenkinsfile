@@ -2,7 +2,7 @@ node {
 
     checkout scm
 
-    docker.withRegistry('https://registry.hub.docker.com', 'DockerHubCred') {
+    docker.withRegistry('https://hub.docker.com/', 'DockerHubCred') {
 
         def customImage = docker.build("chandana48/dockerwebapp")
 
